@@ -1,0 +1,49 @@
+ .wrp-seances {
+    display: flex;
+    border: 1px solid #848484;
+    gap: 5px; 
+    min-height: 60px;
+    padding: 10px 0px 10px 0px;
+    align-items: center;
+}
+
+.wrp-seances-film {
+    border: 1px solid #0000004D;
+    height: 40px;
+    position: relative;
+}
+
+.film-name-seance {
+    font-family: Roboto;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 10px;
+    line-height: 10px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #000000;
+}
+
+.film-time-seance {
+    font-family: Roboto;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #848484;
+    position: absolute;
+    bottom: -60px;
+    left: -10px;
+}
+
+.film-time-seance::before {
+    content: '|';
+    position: absolute;
+    color: #848484;
+    width: 1px;
+    height: 5px;
+    top: -15px;
+    left: 8px;
+}

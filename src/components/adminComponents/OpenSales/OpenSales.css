@@ -1,0 +1,58 @@
+ .wrp-open-seles {
+    background: #EAE9EBF2;
+    padding: 35px 28px 35px 28px;
+    display: flex;
+    flex-direction: column;
+ }
+
+ .config-open-seles-title {
+    font-family: Roboto;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: rgba(0, 0, 0, 1);
+    margin-bottom: 30px;
+}
+
+.config-open-seles-title-ready { 
+    font-family: Roboto;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: rgba(0, 0, 0, 1);
+    align-self: center;
+    justify-self: center;
+     margin-top: 30px;
+     margin-bottom: 30px;
+}
+
+.wrp-open-seles-btn {
+   margin: 0 auto;
+}
+
+
+@media(min-width: 768px) { 
+    
+    .wrp-open-seles {
+        padding: 31px 35px 31px 105px;
+        position: relative;
+    }
+
+    .wrp-open-seles::after {
+        content: ' ';
+        position: absolute;
+        width: 2px;
+        height: 100%;
+        background: rgba(188, 149, 214, 1);
+        left: 82px;
+        top: 0px; 
+        box-sizing: border-box;
+    }
+
+}

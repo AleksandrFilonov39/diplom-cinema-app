@@ -1,0 +1,50 @@
+.calendaer__link {
+    border-radius: 2px;
+    background-color: #FFFFFFE5;
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    height: 48px;
+    white-space: pre-line;
+    font-family: Roboto;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    align-items: center; 
+    justify-content: center;
+}
+
+.calendaer__link.weecand {
+    color: red;
+}
+
+.calendaer__link.active {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 2px 0px #0000001F;
+    box-shadow: 0px 2px 2px 0px #0000003D;
+    font-family: Roboto;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 15px;
+    line-height: 14px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #000000;
+}
+
+.wrp-carusel {
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 100%;
+    max-width: 990px;
+}
+
+
+
+
+

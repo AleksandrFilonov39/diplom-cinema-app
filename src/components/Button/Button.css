@@ -1,0 +1,13 @@
+.login-button {
+    text-transform: uppercase;
+    background: #16A6AF;
+    height: 40px;
+    padding: 12px;
+    border-radius: 3px;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    border: none;
+}

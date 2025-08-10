@@ -1,0 +1,121 @@
+ .buy-ticket-title {
+    width: 100%;
+    max-width: 990px;
+    height: 75px;
+    box-sizing: border-box;
+    padding: 25px 15px 25px 15px;
+    opacity: 1;
+    font-family: Roboto;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 22px;
+    line-height: 25px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #C76F00;
+    background: #F1EBE6F2;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 15px;
+ }
+
+ .buy-ticket-title::before {
+    content: '';
+    background-image: url('/top-ticket.png');
+    background-size: 12px;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    top: -3px;
+    left: 0;
+ }
+
+ .buy-ticket-title::after {
+    content: '';
+    background-image: url('/bottom-ticket.png');
+    background-size: 12px;
+    position: absolute;
+    width: 100%;
+    height: 3px; 
+    bottom: -3px;
+    left: 0;
+ }
+
+ .buy-ticket-info {
+    box-sizing: border-box;
+    background: #F1EBE6F2;
+    max-width: 990px;
+    margin: 0 auto;
+    margin-top: 6px;
+    /* margin-bottom: 186px; */
+    position: relative;
+    padding: 19px 15px 30px 15px;
+ }
+
+  .buy-ticket-info::before {
+    content: '';
+    background-image: url('/top-ticket.png');
+    background-size: 12px;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    top: -3px;
+    left: 0;
+ }
+
+ .buy-ticket-info::after {
+    content: '';
+    background-image: url('/bottom-ticket.png');
+    background-size: 12px;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -3px;
+    left: 0;
+ }
+
+ .buy-ticket-film-info {
+    display: flex;
+    gap: 5px
+ }
+
+.buy-ticket-film-about-atr {
+    font-family: Roboto;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 18.4px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #000000;
+}
+
+.buy-ticket-film-about-value {
+    font-family: Roboto;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+    line-height: 18.4px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+
+.buy-ticket-film-last-info {
+    font-family: Roboto;
+    font-weight: 300;
+    font-style: Light;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+
+.buy-ticket-film-btn {
+    justify-self: center;
+    align-self: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+} 

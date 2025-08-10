@@ -1,0 +1,71 @@
+.wrp-seance {
+    background: #EAE9EBF2;
+    padding:52px 31px 52px 31px;
+}
+
+.wrp-seance-del {
+    position: relative;
+    background: #EAE9EBF2;
+    padding:52px 31px 52px 31px;
+}
+
+.wrp-seance-del::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 1;
+}
+
+.wrp-drag-film {
+    margin-top: 36px;
+}
+
+.drop-film-img {
+    width: 38px;
+    height: 50px;
+}
+
+.drop-film-side {
+    margin-left: 4px;
+}
+
+.wrp-seance-halls {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.seance-hall-name {
+    font-family: Roboto;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px; 
+    line-height: 18px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
+
+@media(min-width: 768px) {
+    .wrp-seance {
+        padding: 31px 35px 31px 105px;
+        position: relative;
+    }
+
+    .wrp-seance::after { 
+        content: ' ';
+        position: absolute; 
+        width: 2px;
+        height: 100%;
+        background: rgba(188, 149, 214, 1);
+        left: 82px;
+        top: 0px;
+        box-sizing: border-box;
+    }
+
+}
