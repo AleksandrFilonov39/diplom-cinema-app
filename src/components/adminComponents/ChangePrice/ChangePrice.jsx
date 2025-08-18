@@ -53,8 +53,15 @@ function ChangePrice({allData}) {
     function updateRowPrice (e) {
         e.preventDefault();
         const { name, value } = e.target;
+        if(value < 0) {
+            alert('Стоимость не может быть меньше 0')
+                setCurrentPrice(prev => ({...prev, 
+             [name]: 0}))
+            return;
+        }
         setCurrentPrice(prev => ({...prev,
-             [name]: value}))}
+             [name]: value}))
+    }
              
    const handleClick = async () => {
     const params = new FormData()
@@ -87,7 +94,7 @@ function ChangePrice({allData}) {
       <HallsUI 
             updateCurrentHall={updateCurrentHall}
             id={currentHall.id}
-       />
+       /> 
        <h2 className='config-hall-title'>Установите цены для типов кресел:</h2>
        <form className='config-price-form'>
         <label htmlFor="priceStandart" className='form-price-title'>
@@ -100,7 +107,7 @@ function ChangePrice({allData}) {
                 <span className='seats-standart'></span>
                 <p className='wrp-seats-text'> обычные кресла </p>
             </div>
-        </label>
+        </label> 
         <label htmlFor="priceVip" className='form-price-title'>
             <div className='wrp-label-price'>
                 Цена, рублей

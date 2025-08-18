@@ -34,7 +34,7 @@ function FormAuth() {
             localStorage.setItem('authToken', JSON.stringify(user));
             navigate('/adminPage', { replace: true });
         } else {
-            alert('incorrect data')
+            alert('incorrect data') 
         }
 
        }catch(e) {

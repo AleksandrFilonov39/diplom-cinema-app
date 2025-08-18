@@ -110,6 +110,7 @@ function ConfigHall({allData}) {
         setCurrentHall(prev => ({...prev, rows: 10, places: 10, config: config}));
     }
 
+    console.log(currentHall, 'currentHall');
 
   return (
     <div className='wrp-config-hall'>
@@ -128,7 +129,7 @@ function ConfigHall({allData}) {
         <label htmlFor="places" className='form-addHall-title'>
              <p className='form-addHall-text'>Мест, шт</p>
             <input type="number" name='places' className='form-addHall-input' value={currentHall.places} onChange={updateRowPalce}/>
-        </label>
+        </label> 
        </form>
        <h2 className='config-hall-title'>Теперь вы можете указать типы кресел на схеме зала:</h2>
        <div className='wrp-all-seats'>
@@ -149,13 +150,13 @@ function ConfigHall({allData}) {
        <div className='wrp-hall-seats'>
         <h3 className='hall-seats-title'> экран</h3>
             <div className='hall-seats'>
-                {currentHall.config.map((row, indRow) => (
+                {Array.isArray(currentHall.config) && currentHall.config.map((row, indRow) => (
                     <div className='hall-seats-row' key={indRow}>
                         {row.map((el, indPlace) => (
                             <span className={`seats-${el}`} key={indPlace} onClick={() => chengePlaсe(indRow, indPlace)}><p className='seats-name'>{el}</p></span>
                         ))}
                     </div> 
-                ))}
+                ))} 
             </div>
        </div>
        <div className='wrp-btn'>

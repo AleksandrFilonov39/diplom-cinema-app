@@ -1,78 +1,77 @@
 .ticket-titel-text {
-    font-family: Roboto;
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 22px;
-    line-height: 25px;
-    letter-spacing: 0%;
-    vertical-align: middle;
-    text-transform: uppercase;
-    color: rgba(199, 111, 0, 1);
-    width: 242;
-    height: 25;
-    max-width: 360.4px;
-    max-height: 25.3px;
-    opacity: 1;
+  font-family: Roboto;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 22px;
+  line-height: 25px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: rgba(199, 111, 0, 1);
+  width: 242;
+  height: 25;
+  max-width: 360.4px;
+  max-height: 25.3px;
+  opacity: 1;
 }
 
 .wrp-ticket-body {
-    width: 390px;
-    height: 490px;
-    opacity: 1;
-    background: rgba(241, 235, 230, 0.95);
+  width: 390px;
+  height: 490px;
+  opacity: 1;
+  background: rgba(241, 235, 230, 0.95);
 }
 
 .qr-ticket {
-    width: 200px;
-    height: 200px;
-    opacity: 1;
-    top: 172px;
-    left: 95px;
+  width: 200px;
+  height: 200px;
+  opacity: 1;
+  top: 172px;
+  left: 95px;
 }
 
- .buy-ticket-info {
-    box-sizing: border-box;
-    background: #F1EBE6F2;
-    margin-top: 6px;
-    /* margin-bottom: 186px; */
-    position: relative;
-    padding: 19px 15px 30px 15px;
- }
+.buy-ticket-info {
+  box-sizing: border-box;
+  background: #f1ebe6f2;
+  margin-top: 6px;
+  /* margin-bottom: 186px; */
+  position: relative;
+  padding: 19px 15px 30px 15px;
+}
 
- .buy-ticket-info::before {
-    content: '';
-    background-image: url('/top-ticket.png');
-    background-size: 12px;
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    top: -3px;
-    left: 0;
- }
+.buy-ticket-info::before {
+  content: "";
+  background-image: url("/top-ticket.png");
+  background-size: 12px;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  top: -3px;
+  left: 0;
+}
 
- .buy-ticket-info::after {
-    content: '';
-    background-image: url('/bottom-ticket.png');
-    background-size: 12px;
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    bottom: -3px;
-    left: 0;
- }
+.buy-ticket-info::after {
+  content: "";
+  background-image: url("/bottom-ticket.png");
+  background-size: 12px;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -3px;
+  left: 0;
+}
 
- .container-tickets {
-    width: 100%;
-    background-image: url("/bjImage.jpg");
-    background-size: cover;
-    background-position: right;
-    padding: 14px 0px 186px 0px;
+.container-tickets {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/bjImage.jpg");
+  background-size: cover;
+  background-position: right;
+  padding: 14px 0px 0px 0px;
 }
 
 @media (min-width: 990px) {
- .container-tickets {
+  .container-tickets {
     padding: 14px 0px 0px 0px;
- }
+  }
 }
-
-  

@@ -42,7 +42,7 @@ function OpenSales({allData}) {
             }
 
         const data = await response.json();
-        console.log(data)
+        console.log(data, 'open close/open')
         setCurrentHall(prev => ({...prev, open: currentHall.open === 0 ? 1 : 0}));
 
         }catch (e) {

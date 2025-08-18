@@ -13,7 +13,7 @@ function Authorization() {
         <h2 className='auth-adm'>Администраторррская</h2>
       </div>
       <FormAuth />
-    </div>    
+    </div>     
   )
 }
 

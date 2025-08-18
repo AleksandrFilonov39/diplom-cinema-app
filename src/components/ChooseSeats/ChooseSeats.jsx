@@ -92,13 +92,13 @@ const handleClick = () => {
             <p className='title-choose-seats-hall-name'>{hallName.hall_name}</p>
           </div>
           <div className='wrp-title-choose-tap'>
-            <img src="/hint.png" alt="double tap" className='wrp-title-choose-tap-img'/>
+            <img src="./hint.png" alt="double tap" className='wrp-title-choose-tap-img'/>
             <p>тапните дважды для увеличения</p>
-          </div>
+          </div> 
          </div>
 
           <div className='wrp-hall-choose-seats'>
-            <img src="/screen.png" alt="screen" className='wrp-hall-choose-seats-img'/>
+            <img src="./screen.png" alt="screen" className='wrp-hall-choose-seats-img'/>
            <div className='hall-seats-choose'>
             {data.result?.map((row, indRow) => (
               <div className='hall-seats-choose-row' key={indRow}>

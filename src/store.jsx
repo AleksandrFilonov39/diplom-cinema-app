@@ -27,6 +27,8 @@ const useStore = create(
         set(() => ({ ticketsDataQR: updates })),
     updateAllData: (updates) => 
         set(() => ({ allData: updates })),
-})));
+}),
+  { name: 'storage' },
+));
 
 export default useStore;

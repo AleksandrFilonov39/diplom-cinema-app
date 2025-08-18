@@ -1,220 +1,218 @@
 .wrp-title-choose-seats {
-    display: flex;
-    flex-direction: column;
-    padding: 15px 15px 30px 15px;
-    background: #F1EBE6F2;
-    max-width: 990px;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 15px 30px 15px;
+  background: #f1ebe6f2;
+  max-width: 990px;
+  margin: 0 auto;
 }
 
 .wrp-hall-choose-seats {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 15px 53px 15px 53px;
-    background: rgba(23, 29, 36, 1);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 53px 15px 53px;
+  background: rgba(23, 29, 36, 1);
 }
 
 .hall-seats-choose {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin-top: 20px;
-    width: 100%;
-    box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .hall-seats-choose-row {
-    display: flex;
-    gap: 10px
+  display: flex;
+  gap: 10px;
 }
 
 .seats-choose-standart {
-    width: 20px;
-    height: 20px;
-    opacity: 1;
-    border-radius: 4px;
-    border-width: 1px;
-    border: 1px solid rgba(82, 82, 82, 1);
-    margin-top: 7px;
-    background: rgba(255, 255, 255, 1);
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+  border-radius: 4px;
+  border-width: 1px;
+  border: 1px solid rgba(82, 82, 82, 1);
+  margin-top: 7px;
+  background: rgba(255, 255, 255, 1);
 }
 
 .seats-choose-vip {
-    width: 20px;
-    height: 20px;
-    opacity: 1;
-    border-radius: 4px;
-    border-width: 1px;
-    margin-top: 7px;
-    border: 1px solid rgba(82, 82, 82, 1);
-    background: rgba(249, 149, 58, 1);
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+  border-radius: 4px;
+  border-width: 1px;
+  margin-top: 7px;
+  border: 1px solid rgba(82, 82, 82, 1);
+  background: rgba(249, 149, 58, 1);
 }
 
 .seats-choose-taken {
-    width: 20px;
-    height: 20px;
-    opacity: 1;
-    border-radius: 4px;
-    border-width: 1px;
-    margin-top: 7px;
-    border: 1px solid rgba(82, 82, 82, 1);
-
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+  border-radius: 4px;
+  border-width: 1px;
+  margin-top: 7px;
+  border: 1px solid rgba(82, 82, 82, 1);
 }
 
 .seats-choose-disabled {
-    width: 20px;
-    height: 20px;
-    opacity: 1; 
-    border-radius: 4px;
-    border-width: 1px;
-    margin-top: 7px;
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+  border-radius: 4px;
+  border-width: 1px;
+  margin-top: 7px;
 }
 
 .seats-choose-select {
-    width: 24px;
-    height: 24px;
-    opacity: 1;
-    border-radius: 4px;
-    border-width: 1px;
-    margin-top: 7px;
-    border: 1px solid rgba(82, 82, 82, 1);
-    background: rgba(37, 196, 206, 1);
-    box-shadow: 0px 0px 4px 0px rgba(22, 166, 175, 1);
-
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+  border-radius: 4px;
+  border-width: 1px;
+  margin-top: 7px;
+  border: 1px solid rgba(82, 82, 82, 1);
+  background: rgba(37, 196, 206, 1);
+  box-shadow: 0px 0px 4px 0px rgba(22, 166, 175, 1);
 }
 
 .wrp-seats-choose-text {
-    font-family: Roboto;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0%;
-    vertical-align: middle;
-    color: rgba(132, 132, 132, 1);
+  font-family: Roboto;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: rgba(132, 132, 132, 1);
 }
 
 .seats-choose-name {
-    font-family: Roboto;
-    font-weight: 300;
-    font-style: Light;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0%;
-    vertical-align: middle;
-    color: rgba(255, 255, 255, 1);
+  font-family: Roboto;
+  font-weight: 300;
+  font-style: Light;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: rgba(255, 255, 255, 1);
 }
 
 .title-choose-seats-film-name {
-    font-family: Roboto;
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 16px;
-    line-height: 18px;
-    letter-spacing: 0%;
-    vertical-align: middle;
-    color: #000000;
+  font-family: Roboto;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #000000;
 }
 
 .title-choose-seats-film-time {
-    font-family: Roboto;
-    font-weight: 300;
-    font-style: Light;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0%;
-    vertical-align: middle;
-    color: #000000;
+  font-family: Roboto;
+  font-weight: 300;
+  font-style: Light;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #000000;
 }
 
 .title-choose-seats-hall-name {
-    font-family: Roboto;
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 16px;
-    line-height: 18px;
-    letter-spacing: 0%;
-    vertical-align: middle;
-    color: #000000;
+  font-family: Roboto;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #000000;
 }
 
 .wrp-title-choose {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .wrp-title-choose-name {
-    display: flex;
-    flex-direction: column;
-    min-width: 255px;
+  display: flex;
+  flex-direction: column;
+  min-width: 255px;
 }
 
 .wrp-title-choose-tap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100px;
 }
 
 .wrp-title-choose-tap-img {
-    width: 24px;
-    height: 32px;
-    opacity: 1;
+  width: 24px;
+  height: 32px;
+  opacity: 1;
 }
 
 .header__nav-choose-seats {
-    padding: 0 14px 14px 14px;
-    min-height: 40px;
-    width:100%;
-    max-width: 990px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box; 
-    margin: 0 auto;
+  padding: 0 14px 14px 14px;
+  min-height: 40px;
+  width: 100%;
+  max-width: 990px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .wrp-hall-choose-seats-img {
-    width: 284px;
+  width: 284px;
 }
 
 .seats-choose-varaibles {
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 30px 33px 30px 33px;
-    justify-content: space-between;
-    width: 330px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 33px 30px 33px;
+  justify-content: space-between;
+  width: 330px;
 }
 
 .seats-choose-varaibles-standart {
-    /* width: 180px; */
-    display: flex;
-    gap: 5px
+  display: flex;
+  gap: 5px;
 }
- 
+
 .container-choose-seats {
-    width: 100%;
-    background-image: url("/bjImage.jpg");
-    background-size: cover;
-    background-position: right;
-    padding: 14px 0px 186px 0px;
+  height: 100vh;
+  width: 100%;
+  background-image: url("/bjImage.jpg");
+  background-size: cover;
+  background-position: right;
+  padding: 14px 0px 0px 0px;
 }
 
 .seats-choose-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
 }
 
 @media (min-width: 990px) {
-    .wrp-title-choose-tap {
-        display: none;
-    }
+  .wrp-title-choose-tap {
+    display: none;
+  }
 }

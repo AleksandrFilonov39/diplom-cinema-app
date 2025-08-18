@@ -15,7 +15,7 @@ function Tickets() {
   
   if(!ticketsDataQR) {
     return <Loading />
-  }     
+  }      
 
   const qrData = {
     'Код бронирования': unicCode,

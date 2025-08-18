@@ -10,7 +10,7 @@ import Logo from '../../Logo/Logo';
 
 function AddFilm() {
 
-const [film, setFilm] = useState({});
+const [film, setFilm] = useState({duration: 0});
 const navigate = useNavigate();
 
 function navigateTo () {
@@ -20,6 +20,14 @@ function navigateTo () {
 const filmData = (e) => {
   e.preventDefault();
         const { name, value } = e.target;
+        if(name === 'duration' && value < 0) {
+          alert('Продолжительность фильма не может быть меньше 0');
+          setFilm(prev => ({
+            ...prev,
+             [name]: 0
+        }))
+          return;
+        }
         setFilm(prev => ({
             ...prev,
              [name]: value.trim()
@@ -77,7 +85,7 @@ console.log(film)
           <input type="text" name='filmName' id='filmName' onChange={filmData} className='form-addHall-input'/>
 
           <label htmlFor="duration" className='form-addHall-title'>Продолжительность фильма (мин.)</label>
-          <input type="number" name='duration' id='duration' onChange={filmData} className='form-addHall-input'/>
+          <input type="number" name='duration' value={film.duration} id='duration' onChange={filmData} className='form-addHall-input'/>
 
           <label htmlFor="description" className='form-addHall-title'>Описание фильма</label>
           <input type="text" name='description' id='description'onChange={filmData} className='form-addHall-input-about'/>

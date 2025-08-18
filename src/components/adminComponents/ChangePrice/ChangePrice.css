@@ -1,77 +1,77 @@
- .wrp-config-price {
-    display: flex;
-    flex-direction: column;
-    background: #EAE9EBF2;
-    padding: 31px 35px 0px 35px;
-    position: relative;
- } 
+.wrp-config-price {
+  display: flex;
+  flex-direction: column;
+  background: #eae9ebf2;
+  padding: 31px 35px 0px 35px;
+  position: relative;
+}
 
 .config-price-form {
-    display: flex;
-    position: relative;
-    margin-bottom: 36px;
-    flex-direction: column;
+  display: flex;
+  position: relative;
+  margin-bottom: 36px;
+  flex-direction: column;
 }
 
 .form-price-title {
-    font-family: Roboto;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0%;
-    vertical-align: middle;
-    color: rgba(132, 132, 132, 1);
-    margin-top: 15px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 5px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: rgba(132, 132, 132, 1);
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
 }
 
 .form-price-input {
-    width: 100px;
-    height: 36px;
-    border-width: 1px;
-    opacity: 1;
-    padding-top: 8px;
-    padding-right: 8.8px;
-    padding-bottom: 9px;
-    padding-left: 8.8px;
-    background: rgba(255, 255, 255, 1);
-    border: 1px solid rgba(183, 183, 183, 1)
+  box-sizing: border-box;
+  width: 100px;
+  height: 36px;
+  border-width: 1px;
+  opacity: 1;
+  padding-top: 8px;
+  padding-right: 8.8px;
+  padding-bottom: 9px;
+  padding-left: 8.8px;
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(183, 183, 183, 1);
 }
 
 .wrp-seats-price {
-    display: flex;
-    gap: 5px;
+  display: flex;
+  gap: 5px;
+  margin-top: 15px;
 }
 
 .wrp-label-price {
-    width: 120px;
+  width: 120px;
 }
 
 .wrp-price-btns {
-    display: flex;
-    gap: 15px;
-    margin: 0 auto;
+  display: flex;
+  gap: 15px;
+  margin: 0 auto;
 }
 
+@media (min-width: 768px) {
+  .wrp-config-price {
+    padding: 31px 35px 31px 105px;
+  }
 
-@media(min-width: 768px) {
-    .wrp-config-price {
-        padding: 31px 35px 31px 105px;
-    }
-
-    .wrp-config-price::after {
-        content: ' ';
-        position: absolute;
-        width: 2px;
-        height: 100%;
-        background: rgba(188, 149, 214, 1);
-        left: 82px;
-        top: 0px;
-        box-sizing: border-box;
-    }
+  .wrp-config-price::after {
+    content: " ";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background: rgba(188, 149, 214, 1);
+    left: 82px;
+    top: 0px;
+    box-sizing: border-box;
+  }
 }
-
