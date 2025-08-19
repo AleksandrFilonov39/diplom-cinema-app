@@ -65,6 +65,7 @@
 
 .wrp-config-hall-hall_name {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 36px;
 }
 

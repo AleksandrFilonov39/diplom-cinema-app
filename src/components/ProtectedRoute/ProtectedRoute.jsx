@@ -1,17 +1,14 @@
-import './ProtectedRoute.css'
-import { Navigate } from 'react-router-dom';
-
+import "./ProtectedRoute.css";
+import { Navigate } from "react-router-dom";
 
 function ProtectedRoute({ children }) {
+  const isAuthenticated = localStorage.getItem("authToken");
 
-    const isAuthenticated = localStorage.getItem('authToken');
+  if (!isAuthenticated) {
+    return <Navigate to="/" />;
+  }
 
-
-    if (!isAuthenticated) {
-    return <Navigate to="/"/>;
-    }
-
-  return children
+  return children;
 }
 
-export default ProtectedRoute
+export default ProtectedRoute;

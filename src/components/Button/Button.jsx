@@ -1,11 +1,11 @@
-import './Button.css'
+import "./Button.css";
 
-function Button({onClick}) {
-  
-
+function Button({ onClick }) {
   return (
-    <button className='login-button' onClick={onClick}>войти</button>
-  )
+    <button className="login-button" onClick={onClick}>
+      войти
+    </button>
+  );
 }
 
-export default Button
+export default Button;

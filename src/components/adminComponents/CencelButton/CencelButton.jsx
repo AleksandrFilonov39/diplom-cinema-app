@@ -1,13 +1,11 @@
-import './CencelButton.css'
+import "./CencelButton.css";
 
-
-
-function CencelButton({title, onClick}) {
- 
-
+function CencelButton({ title, onClick }) {
   return (
-    <button onClick={onClick} className='form-addHall-cancelBTN'>{title}</button>
-  )
+    <button onClick={onClick} className="form-addHall-cancelBTN">
+      {title}
+    </button>
+  );
 }
 
-export default CencelButton
+export default CencelButton;
