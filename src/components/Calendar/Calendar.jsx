@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import Slider from "react-slick";
 import useStore from "../../store";
-import Loading from '../Loading/Loading'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Calendar.css";
@@ -51,7 +50,7 @@ function Calendar() {
     }
 
     formatDate();
-  }, []);
+  }, [updateSelectedDate]);
 
   const settings = {
     dots: true,
@@ -75,7 +74,7 @@ function Calendar() {
   };
 
   if (!date) {
-    return <Loading />;
+    return <h1>Loading...</h1>;
   }
 
   return (
