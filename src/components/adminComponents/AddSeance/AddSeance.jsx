@@ -121,6 +121,7 @@ function AddSeance() {
         />
 
         <form className="wrp-form-addHall">
+          <div className="wrp-form-addHall-label-input-addSeance">
           <label htmlFor="hallName">Название зала</label>
           <select
             className="form-addHall-input"
@@ -161,6 +162,7 @@ function AddSeance() {
             onChange={handleChange}
             className="form-addHall-input"
           />
+          </div>
           <div className="wrp-addFilm-btns">
             <AdminButton
               title={"добавить фильм"}

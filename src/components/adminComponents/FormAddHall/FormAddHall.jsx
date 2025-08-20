@@ -83,21 +83,23 @@ function FormAddHall() {
             onClick={navigateTo}
           />
           <form className="wrp-form-addHall" onSubmit={addHall}>
-            <label htmlFor="hallName" className="form-addHall-title">
-              Название зала
-            </label>
-            <input
-              type="text"
-              name="hallName"
-              placeholder="Например, «Зал 1»"
-              className="form-addHall-input"
-              onChange={handleChange}
-            />
+            <div className="wrp-form-addHall-label-input">
+              <label htmlFor="hallName" className="form-addHall-title">
+                Название зала
+              </label>
+              <input
+                type="text"
+                name="hallName"
+                placeholder="Например, «Зал 1»"
+                className="form-addHall-input"
+                onChange={handleChange}
+              />
+            </div>
             <div className="wrp-form-addHall-btns">
               <AdminButton title={"добавить зал"} onClick={addHall} />
               <button className="form-addHall-cancelBTN" onClick={navigateTo}>
                 отменить
-              </button>
+              </button> 
             </div>
           </form>
         </div>

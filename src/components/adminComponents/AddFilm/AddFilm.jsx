@@ -99,6 +99,7 @@ function AddFilm() {
           onClick={navigateTo}
         />
         <form className="wrp-form-addHall">
+          <div className="wrp-form-addHall-label-input">
           <label htmlFor="filmName" className="form-addHall-title">
             Название фильма
           </label>
@@ -135,7 +136,7 @@ function AddFilm() {
 
           <label htmlFor="country" className="form-addHall-title">
             Страна
-          </label>
+          </label> 
           <input
             type="text"
             name="country"
@@ -143,6 +144,7 @@ function AddFilm() {
             onChange={filmData}
             className="form-addHall-input"
           />
+          </div>
           <div className="wrp-addFilm-btns">
             <AdminButton title={"добавить фильм"} handleClick={handleClick} />
 

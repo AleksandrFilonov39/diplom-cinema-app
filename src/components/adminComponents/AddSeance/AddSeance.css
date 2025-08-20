@@ -1,0 +1,8 @@
+.wrp-form-addHall-label-input-addSeance {
+  display: flex;
+  flex-direction: column;
+  width: 100% !important;
+  max-width: 750px;
+  margin: 0 auto;
+  gap: 15px;
+}
