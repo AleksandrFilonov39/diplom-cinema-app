@@ -105,6 +105,7 @@
   letter-spacing: 0%;
   vertical-align: middle;
   color: rgba(255, 255, 255, 1);
+  margin-top: 10px;
 }
 
 .title-choose-seats-film-name {
@@ -196,7 +197,7 @@
 }
 
 .container-choose-seats {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-image: url("/bjImage.jpg");
   background-size: cover;
@@ -211,8 +212,18 @@
   margin-top: 35px;
 }
 
+@media (min-width: 768px) {
+  .container-choose-seats {
+    padding: 14px 0px 0px 0px;
+  }
+}
+
 @media (min-width: 990px) {
   .wrp-title-choose-tap {
     display: none;
+  }
+
+  .container-choose-seats {
+    padding: 14px 0px 186px 0px;
   }
 }

@@ -10,16 +10,9 @@
   color: rgba(199, 111, 0, 1);
   width: 242;
   height: 25;
-  max-width: 360.4px;
-  max-height: 25.3px;
+  max-width: 360px;
+  max-height: 25px;
   opacity: 1;
-}
-
-.wrp-ticket-body {
-  width: 390px;
-  height: 490px;
-  opacity: 1;
-  background: rgba(241, 235, 230, 0.95);
 }
 
 .qr-ticket {
@@ -34,7 +27,6 @@
   box-sizing: border-box;
   background: #f1ebe6f2;
   margin-top: 6px;
-  margin-bottom: 186px;
   position: relative;
   padding: 19px 15px 30px 15px;
 }
@@ -63,15 +55,19 @@
 
 .container-tickets {
   width: 100%;
-  height: 100vh;
   background-image: url("/bjImage.jpg");
   background-size: cover;
   background-position: right;
   padding: 14px 0px 186px 0px;
+  height: 100%;
 }
 
-@media (min-width: 990px) {
+@media (min-width: 760px) {
   .container-tickets {
+    height: 100%;
     padding: 14px 0px 0px 0px;
+  }
+  .buy-ticket-info {
+    height: 100%;
   }
 }

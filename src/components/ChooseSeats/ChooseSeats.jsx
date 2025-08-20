@@ -28,7 +28,7 @@ function ChooseSeats() {
       }
     }
 
-    fetchData();
+    fetchData(); 
   }, [dateSeance, id]);
 
   if (!allData?.result?.seances) {
@@ -156,7 +156,6 @@ function ChooseSeats() {
             <div className="seats-choose-varaibles-standart">
               <span className="seats-choose-vip"></span>
               <p className="seats-choose-name">
-                {" "}
                 Свободно VIP ({hallName.hall_price_vip}руб.)
               </p>
             </div>
