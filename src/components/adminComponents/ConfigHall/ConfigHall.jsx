@@ -47,7 +47,19 @@ function ConfigHall() {
   function updateRowPalce(e) {
     e.preventDefault();
     const { name, value } = e.target;
-    if (currentHall.places > 15 || currentHall.places <= 0) {
+
+    if (value === '') {
+      setCurrentHall((prev) => ({ ...prev, [name]: '' }));
+      return;
+    }
+    
+    const newValue = Number(value);
+    
+    if (isNaN(newValue)) {
+      return;
+    }
+
+    if (currentHall.places > 15 || currentHall.places < 0) {
       alert(
         "число мест в ряду не должно превышать 15 и не может бать меньше нуля"
       );
@@ -55,7 +67,7 @@ function ConfigHall() {
       return;
     }
 
-    if (currentHall.rows > 15 || currentHall.rows <= 0) {
+    if (currentHall.rows > 15 || currentHall.rows < 0) {
       alert(
         "число рядов в зале не должно превышать 15 и не может бать меньше нуля"
       );
@@ -88,6 +100,22 @@ function ConfigHall() {
   }
 
   const handleClick = async () => {
+    if (
+      !currentHall.places ||
+      !currentHall.rows ||
+      isNaN(currentHall.places) ||
+      isNaN(currentHall.rows) ||
+      currentHall.places > 15 ||
+      currentHall.places <= 0 ||
+      currentHall.rows > 15 ||
+      currentHall.rows <= 0
+    ) {
+      alert(
+        "Заполните все поля корректно. Число мест или рядов не должно превышать 15 и не может быть меньше нуля"
+      );
+      return;
+    }
+
     const params = new FormData();
     params.set("rowCount", currentHall?.rows.toString());
     params.set("placeCount", currentHall?.places.toString());

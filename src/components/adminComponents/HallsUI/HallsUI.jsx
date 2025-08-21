@@ -23,7 +23,7 @@ function HallsUI({ updateCurrentHall, id }) {
               )
             }
           >
-            <p className="config-hall-name">{hall.hall_name}</p>
+            <p className="config-hall-name">{hall.hall_name.length < 7 ? hall.hall_name : `${hall.hall_name.slice(0, 7)}...`}</p>
           </div>
         );
       })}

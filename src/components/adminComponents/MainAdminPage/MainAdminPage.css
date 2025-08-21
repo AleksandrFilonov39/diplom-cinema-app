@@ -1,34 +1,33 @@
 .wrp-auth-main {
-    position: relative;
-    background-image: url("/bgImageAuth.jpg");
-    width: 100%;
-    min-height: 100vh;
-    margin-left: 0;
-    padding: 0;
-    background-size: cover;
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-
+  position: relative;
+  background-image: url("/bgImageAuth.jpg");
+  width: 100%;
+  min-height: 100vh;
+  margin-left: 0;
+  padding: 0;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
 }
- 
+
 .wrp-auth-main::before {
   content: "";
   position: absolute;
   top: 0;
-  left: 0; 
+  left: 0;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   z-index: -1;
 }
- 
+
 .wrp-logo-main {
-    margin-top: 35px;
-    margin-bottom: 35px;
-    display: flex;
-    justify-content: space-between;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .wrp-info-main {
@@ -36,7 +35,7 @@
   flex-direction: column;
   box-sizing: border-box;
   max-width: 962px;
-  width: 100%; 
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -48,73 +47,28 @@
 }
 
 .section-content {
-  will-change: transform, opacity;
-  transform-origin: top;
   overflow: hidden;
 }
 
-.section-content.open {
-  animation: slideDown 0.6s cubic-bezier(0.33, 1, 0.68, 1) forwards;
-}
-
-.section-content.closed {
-  animation: slideUp 0.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
-}
-
-@keyframes slideDown {
-  0% {
-    transform: translateY(-100%);
-    opacity: 0;
-    max-height: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-    max-height: 5000px;
-  }
-}
-
-@keyframes slideUp {
-  0% {
-    transform: translateY(0);
-    opacity: 1;
-    max-height: 5000px;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    transform: translateY(-100%);
-    opacity: 0;
-    max-height: 0;
-  }
-}
-
-.header-text {
+/* .header-text {
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
   z-index: 2;
-}
+} */
 
 @media (max-width: 767px) {
-
   .wrp-logo-main {
     margin: 0 auto;
     margin-top: 35px;
     margin-bottom: 35px;
+  }
 }
-}
-
 
 @media (min-width: 768px) {
-
   .wrp-logo-main {
     padding-left: 104px;
     margin-top: 35px;
     margin-bottom: 35px;
-}
+  }
 }

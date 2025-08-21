@@ -63,15 +63,46 @@ function ChangePrice() {
   function updateRowPrice(e) {
     e.preventDefault();
     const { name, value } = e.target;
-    if (value < 0) {
-      alert("Стоимость не может быть меньше 0");
-      setCurrentPrice((prev) => ({ ...prev, [name]: 0 }));
+
+    if (value === '') {
+      setCurrentPrice((prev) => ({ ...prev, [name]: '' }));
+      return;
+    }
+    
+    const newValue = Number(value);
+    
+    if (isNaN(newValue)) {
+      return;
+    }
+
+
+    if (value < 0 || value > 50000) {
+      alert("Стоимость не может быть меньше 0 или ");
+      setCurrentPrice((prev) => ({ ...prev, [name]: 1 }));
       return;
     }
     setCurrentPrice((prev) => ({ ...prev, [name]: value }));
   }
 
   const handleClick = async () => {
+
+     if (
+      !currentPrice.priceStandart ||
+      !currentPrice.priceVip ||
+      isNaN(currentPrice.priceStandart) ||
+      isNaN(currentPrice.priceVip) ||
+      currentPrice.priceStandart > 5000 ||
+      currentPrice.priceStandart < 0 ||
+      currentPrice.priceVip > 5000 ||
+      currentPrice.priceVip < 0
+    ) {
+      alert(
+        "Заполните все поля корректно. Стоимость билетов не может быть меньше 0 и больше 5000"
+      );
+      return;
+    }
+
+
     const params = new FormData();
     params.set("priceStandart", currentPrice.priceStandart);
     params.set("priceVip", currentPrice.priceVip);

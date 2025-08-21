@@ -9,31 +9,31 @@
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
- 
+
 .custom-file-upload {
-    font-family: Roboto;
-    font-weight: 500;
-    font-style: Medium;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0%;
-    text-align: center;
-    vertical-align: middle;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 1);
-    width: 146px;
-    height: 40px;
-    border-radius: 3px;
-    opacity: 1;
-    top: 139px; 
-    left: 116px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    background: rgba(22, 166, 175, 1);
-    box-shadow: 0px 0px 3px 0px #0000001F;
-    box-shadow: 0px 3px 3px 0px #0000003D;
-    border: none;
-    box-sizing: border-box;
+  font-family: Roboto;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
+  width: 146px;
+  height: 40px;
+  border-radius: 3px;
+  opacity: 1;
+  top: 139px;
+  left: 116px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background: rgba(22, 166, 175, 1);
+  box-shadow: 0px 0px 3px 0px #0000001f;
+  box-shadow: 0px 3px 3px 0px #0000003d;
+  border: none;
+  box-sizing: border-box;
 }
 
 .wrp-addFilm-btns {
@@ -47,18 +47,18 @@
 }
 
 .form-addHall-input-about {
-    background: rgba(255, 255, 255, 1);
-    border: 1px solid rgba(183, 183, 183, 1);
-    width: 100% !important;
-    height: 80px;
-    border-width: 1px;
-    opacity: 1;
-    padding: 8px; 
-    margin: 0;
-    box-sizing: border-box;
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(183, 183, 183, 1);
+  width: 100% !important;
+  height: 80px;
+  border-width: 1px;
+  opacity: 1;
+  padding: 8px;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .wrp-addFilm-btns {
     flex-direction: row;
   }

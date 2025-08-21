@@ -55,7 +55,7 @@ function AddHall() {
       {allData.result.halls.map((hall) => (
         <div key={hall.id} className="wrp-hall">
           <h2>-</h2>
-          <h2 className="hall-name">{hall.hall_name}</h2>
+          <h2 className="hall-name">{hall.hall_name.length < 30 ? hall.hall_name : `${hall.hall_name.slice(0, 27)}...`}</h2>
           <button
             className="hall-delete"
             onClick={() => deleteHall(hall.id)}

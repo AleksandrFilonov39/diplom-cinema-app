@@ -5,13 +5,15 @@ import Header from "../Header/Header";
 import "./FormAddHall.css";
 import { useNavigate } from "react-router-dom";
 import useStore from "../../../store";
+import CencelButton from "../CencelButton/CencelButton";
 
 function FormAddHall() {
   const [newHall, setNewHall] = useState(null);
   const navigate = useNavigate();
   const { updateAllData } = useStore();
 
-  function navigateTo() {
+  function navigateTo(e) {
+    e.preventDefault();
     navigate("/adminPage", { replace: true });
   }
 
@@ -97,9 +99,7 @@ function FormAddHall() {
             </div>
             <div className="wrp-form-addHall-btns">
               <AdminButton title={"добавить зал"} onClick={addHall} />
-              <button className="form-addHall-cancelBTN" onClick={navigateTo}>
-                отменить
-              </button> 
+              <CencelButton title={"отменить"} onClick={navigateTo} />
             </div>
           </form>
         </div>

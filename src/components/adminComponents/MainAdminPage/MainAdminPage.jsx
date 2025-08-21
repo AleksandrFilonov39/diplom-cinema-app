@@ -11,6 +11,7 @@ import AdminButton from "../AdminButton/AdminButton";
 import { useNavigate } from "react-router-dom";
 import useStore from "../../../store";
 import Loading from "../../Loading/Loading";
+import { motion, AnimatePresence } from "framer-motion";
 
 function MainAdminPage() {
   const [showContent, setShowContent] = useState({
@@ -40,6 +41,25 @@ function MainAdminPage() {
     return <Loading />;
   }
 
+  const sectionVariants = {
+    open: {
+      opacity: 1,
+      height: "auto",
+      transition: {
+        duration: 0.7,
+        ease: [0.33, 1, 0.68, 1],
+      },
+    },
+    closed: {
+      opacity: 0,
+      height: 0,
+      transition: {
+        duration: 0.6,
+        ease: [0.33, 1, 0.68, 1],
+      },
+    },
+  };
+
   return (
     <div className="wrp-auth-main">
       <div className="wrp-info-main">
@@ -63,13 +83,19 @@ function MainAdminPage() {
             show={showContent.addHall}
             onClick={hideOption}
           />
-          <div
-            className={`section-content ${
-              showContent.addHall ? "open" : "closed"
-            }`}
-          >
-            <AddHall />
-          </div>
+          <AnimatePresence initial={false}>
+            {showContent.addHall && (
+              <motion.div
+                className="section-content"
+                variants={sectionVariants}
+                initial="closed"
+                animate="open"
+                exit="closed"
+              >
+                <AddHall />
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
 
         <div className="admin-section">
@@ -81,13 +107,19 @@ function MainAdminPage() {
             show={showContent.configHall}
             onClick={hideOption}
           />
-          <div
-            className={`section-content ${
-              showContent.configHall ? "open" : "closed"
-            }`}
-          >
-            <ConfigHall allData={allData} />
-          </div>
+          <AnimatePresence initial={false}>
+            {showContent.configHall && (
+              <motion.div
+                className="section-content"
+                variants={sectionVariants}
+                initial="closed"
+                animate="open"
+                exit="closed"
+              >
+                <ConfigHall allData={allData} />
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
 
         <div className="admin-section">
@@ -99,13 +131,19 @@ function MainAdminPage() {
             show={showContent.changePrice}
             onClick={hideOption}
           />
-          <div
-            className={`section-content ${
-              showContent.changePrice ? "open" : "closed"
-            }`}
-          >
-            <ChangePrice />
-          </div>
+          <AnimatePresence initial={false}>
+            {showContent.changePrice && (
+              <motion.div
+                className="section-content"
+                variants={sectionVariants}
+                initial="closed"
+                animate="open"
+                exit="closed"
+              >
+                <ChangePrice />
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
 
         <div className="admin-section">
@@ -117,13 +155,19 @@ function MainAdminPage() {
             show={showContent.seanceList}
             onClick={hideOption}
           />
-          <div
-            className={`section-content ${
-              showContent.seanceList ? "open" : "closed"
-            }`}
-          >
-            <SeanceList />
-          </div>
+          <AnimatePresence initial={false}>
+            {showContent.seanceList && (
+              <motion.div
+                className="section-content"
+                variants={sectionVariants}
+                initial="closed"
+                animate="open"
+                exit="closed"
+              >
+                <SeanceList />
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
 
         <div className="admin-section">
@@ -135,13 +179,19 @@ function MainAdminPage() {
             show={showContent.openSales}
             onClick={hideOption}
           />
-          <div
-            className={`section-content ${
-              showContent.openSales ? "open" : "closed"
-            }`}
-          >
-            <OpenSales />
-          </div>
+          <AnimatePresence initial={false}>
+            {showContent.openSales && (
+              <motion.div
+                className="section-content"
+                variants={sectionVariants}
+                initial="closed"
+                animate="open"
+                exit="closed"
+              >
+                <OpenSales />
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       </div>
     </div>
