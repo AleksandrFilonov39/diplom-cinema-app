@@ -16,8 +16,8 @@ function DeleteSeance({ deleteFilmData, deleteSeance, closeDelete }) {
           сеанса: {deleteFilmData.seanceTime}
         </h2>
         <div className="wrp-btn-del-seance">
-          <AdminButton title={"удалить сеанс"} handleClick={deleteSeance} />
-          <CencelButton title={"отменить"} onClick={closeDelete} />
+          <AdminButton title={"удалить сеанс"} handleClick={deleteSeance} css={"admin-button-large"}/>
+          <CencelButton title={"отменить"} onClick={closeDelete} widthPX={275}/>
         </div>
       </div>
     </div>

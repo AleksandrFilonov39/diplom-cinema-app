@@ -75,8 +75,7 @@ function ChangePrice() {
       return;
     }
 
-
-    if (value < 0 || value > 50000) {
+    if (value <= 0 || value > 50000) {
       alert("Стоимость не может быть меньше 0 или ");
       setCurrentPrice((prev) => ({ ...prev, [name]: 1 }));
       return;
@@ -92,9 +91,9 @@ function ChangePrice() {
       isNaN(currentPrice.priceStandart) ||
       isNaN(currentPrice.priceVip) ||
       currentPrice.priceStandart > 5000 ||
-      currentPrice.priceStandart < 0 ||
+      currentPrice.priceStandart <= 0 ||
       currentPrice.priceVip > 5000 ||
-      currentPrice.priceVip < 0
+      currentPrice.priceVip <= 0
     ) {
       alert(
         "Заполните все поля корректно. Стоимость билетов не может быть меньше 0 и больше 5000"
@@ -138,7 +137,7 @@ function ChangePrice() {
   };
 
   const handleCencel = () => {
-    setCurrentPrice((prev) => ({ ...prev, priceStandart: "0", priceVip: "0" }));
+    setCurrentPrice((prev) => ({ ...prev, priceStandart: "1", priceVip: "1" }));
   };
 
   return (
@@ -183,7 +182,7 @@ function ChangePrice() {
         </label>
       </form>
       <div className="wrp-price-btns">
-        <CencelButton title={"отменить"} onClick={handleCencel} />
+        <CencelButton title={"отменить"} onClick={handleCencel} widthPX={146}/>
         <AdminButton title={"сохранить"} handleClick={handleClick} />
       </div>
     </div>

@@ -111,7 +111,7 @@ function ChooseSeats() {
               alt="double tap"
               className="wrp-title-choose-tap-img"
             />
-            <p>тапните дважды для увеличения</p>
+            <p>Тапните дважды, чтобы увеличить</p>
           </div>
         </div>
 
@@ -152,7 +152,7 @@ function ChooseSeats() {
             <div className="seats-choose-varaibles-standart">
               <span className="seats-choose-taken"></span>
               <p className="seats-choose-name">Занято</p>
-            </div>
+            </div> 
             <div className="seats-choose-varaibles-standart">
               <span className="seats-choose-vip"></span>
               <p className="seats-choose-name">
@@ -166,7 +166,7 @@ function ChooseSeats() {
           </div>
         </div>
         <div className="seats-choose-btn">
-          <AdminButton title={"забронировать"} handleClick={handleClick} />
+          <AdminButton title={"забронировать"} handleClick={handleClick} css={"admin-button-large"}/>
         </div>
       </div>
     </div>

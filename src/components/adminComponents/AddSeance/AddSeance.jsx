@@ -122,9 +122,10 @@ function AddSeance() {
 
         <form className="wrp-form-addHall">
           <div className="wrp-form-addHall-label-input-addSeance">
-          <label htmlFor="hallName">Название зала</label>
+          <label htmlFor="hallName" className="form-addHall-title-seance">Название зала</label>
           <select
-            className="form-addHall-input"
+            id="hallName"
+            className="form-addHall-input-form-seance"
             value={selectedHall}
             onChange={(e) => setSelectedHall(e.target.value)}
           >
@@ -137,9 +138,10 @@ function AddSeance() {
                 </option>
               ))}
           </select>
-
+          <label htmlFor="filmName" className="form-addHall-title-seance">Название фильма</label>
           <select
-            className="form-addHall-input"
+            id="filmName"
+            className="form-addHall-input-form-seance"
             value={selectedFilm}
             onChange={(e) => setSelectedFilm(e.target.value)}
           >
@@ -153,22 +155,23 @@ function AddSeance() {
               ))}
           </select>
 
-          <label htmlFor="time">Время начала</label>
+          <label htmlFor="time" className="form-addHall-title-seance">Время начала</label>
           <input
-            type="text"
+            type="time"
             name="time"
             id="time"
             placeholder={error}
             onChange={handleChange}
-            className="form-addHall-input"
+            className="form-addHall-input-form-seance"
           />
           </div>
           <div className="wrp-addFilm-btns">
             <AdminButton
               title={"добавить фильм"}
               handleClick={(e) => handleClick(e)}
+              css={"admin-button-large"}
             />
-            <CencelButton title={"отменить"} onClick={navigateTo} />
+            <CencelButton title={"отменить"} onClick={navigateTo} widthPX={275}/>
           </div>
         </form>
       </div>

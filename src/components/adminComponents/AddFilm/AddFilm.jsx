@@ -16,7 +16,7 @@ function AddFilm() {
     navigate("/adminPage", { replace: true });
   }
 
-  const filmData = (e) => {
+  const filmData = (e) => { 
     e.preventDefault();
     const { name, value } = e.target;
     if (name === "duration" && value < 0) {
@@ -108,7 +108,7 @@ function AddFilm() {
             name="filmName"
             id="filmName"
             onChange={filmData}
-            className="form-addHall-input"
+            className="form-addHall-input-form"
           />
 
           <label htmlFor="duration" className="form-addHall-title">
@@ -120,13 +120,13 @@ function AddFilm() {
             value={film.duration}
             id="duration"
             onChange={filmData}
-            className="form-addHall-input"
+            className="form-addHall-input-form"
           />
 
           <label htmlFor="description" className="form-addHall-title">
             Описание фильма
           </label>
-          <input
+          <textarea
             type="text"
             name="description"
             id="description"
@@ -142,18 +142,18 @@ function AddFilm() {
             name="country"
             id="country"
             onChange={filmData}
-            className="form-addHall-input"
+            className="form-addHall-input-form"
           />
           </div>
           <div className="wrp-addFilm-btns">
-            <AdminButton title={"добавить фильм"} handleClick={handleClick} />
-
+            <AdminButton title={"добавить фильм"} handleClick={handleClick} /> 
+ 
             <label className="custom-file-upload">
               <span>Загрузить постер</span>
               <input type="file" name="poster" onChange={filePoster} />
             </label>
 
-            <CencelButton title={"отменить"} onClick={navigateTo} />
+            <CencelButton title={"отменить"} onClick={navigateTo} widthPX={146}/>
           </div>
         </form>
       </div>

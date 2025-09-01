@@ -1,7 +1,7 @@
 .wrp-title-choose-seats {
   display: flex;
   flex-direction: column;
-  padding: 15px 15px 30px 15px;
+  padding: 15px 0px 30px 0px;
   background: #f1ebe6f2;
   max-width: 990px;
   margin: 0 auto;
@@ -21,7 +21,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 0px;
   margin-top: 20px;
   width: 100%;
   box-sizing: border-box;
@@ -29,7 +29,7 @@
 
 .hall-seats-choose-row {
   display: flex;
-  gap: 10px;
+  gap: 4px;
 }
 
 .seats-choose-standart {
@@ -39,7 +39,7 @@
   border-radius: 4px;
   border-width: 1px;
   border: 1px solid rgba(82, 82, 82, 1);
-  margin-top: 7px;
+  margin-top: 4px;
   background: rgba(255, 255, 255, 1);
 }
 
@@ -49,7 +49,7 @@
   opacity: 1;
   border-radius: 4px;
   border-width: 1px;
-  margin-top: 7px;
+  margin-top: 4px;
   border: 1px solid rgba(82, 82, 82, 1);
   background: rgba(249, 149, 58, 1);
 }
@@ -60,7 +60,7 @@
   opacity: 1;
   border-radius: 4px;
   border-width: 1px;
-  margin-top: 7px;
+  margin-top: 4px;
   border: 1px solid rgba(82, 82, 82, 1);
 }
 
@@ -70,7 +70,7 @@
   opacity: 1;
   border-radius: 4px;
   border-width: 1px;
-  margin-top: 7px;
+  margin-top: 4px;
 }
 
 .seats-choose-select {
@@ -79,7 +79,7 @@
   opacity: 1;
   border-radius: 4px;
   border-width: 1px;
-  margin-top: 7px;
+  margin-top: 4px;
   border: 1px solid rgba(82, 82, 82, 1);
   background: rgba(37, 196, 206, 1);
   box-shadow: 0px 0px 4px 0px rgba(22, 166, 175, 1);
@@ -117,6 +117,7 @@
   letter-spacing: 0%;
   vertical-align: middle;
   color: #000000;
+  margin: 0;
 }
 
 .title-choose-seats-film-time {
@@ -128,6 +129,7 @@
   letter-spacing: 0%;
   vertical-align: middle;
   color: #000000;
+  margin: 0;
 }
 
 .title-choose-seats-hall-name {
@@ -139,6 +141,7 @@
   letter-spacing: 0%;
   vertical-align: middle;
   color: #000000;
+  margin: 0;
 }
 
 .wrp-title-choose {
@@ -151,12 +154,17 @@
   display: flex;
   flex-direction: column;
   min-width: 255px;
+  gap: 8px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
 }
 
 .wrp-title-choose-tap {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 5px;
   max-width: 100px;
 }
 

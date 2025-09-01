@@ -47,7 +47,7 @@ function Tickets() {
           <p className="buy-ticket-film-about-value">
             {ticketsDataQR.result[0].ticket_filmname}
           </p>
-        </div>
+        </div> 
         <div className="buy-ticket-film-info">
           <p className="buy-ticket-film-about-atr">Места: </p>
           <p className="buy-ticket-film-about-value">

@@ -26,7 +26,6 @@ function AddHall() {
         throw new Error("Ошибка удаления зала");
       }
 
-      // const data = await response.json();
       const currentData = useStore.getState().allData;
 
       const updatedHalls = currentData.result.halls.filter(

@@ -59,15 +59,5 @@
   background-size: cover;
   background-position: right;
   padding: 14px 0px 186px 0px;
-  height: 100%;
-}
-
-@media (min-width: 760px) {
-  .container-tickets {
-    height: 100%;
-    padding: 14px 0px 0px 0px;
-  }
-  .buy-ticket-info {
-    height: 100%;
-  }
+  height: 100vh;
 }

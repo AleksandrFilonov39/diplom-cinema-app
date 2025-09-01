@@ -229,7 +229,7 @@ function ConfigHall() {
         </div>
       </div>
       <div className="wrp-btn">
-        <CencelButton title={"отменить"} onClick={handleCencel} />
+        <CencelButton title={"отменить"} onClick={handleCencel} widthPX={146}/>
         <AdminButton title={"сохранить"} handleClick={handleClick} />
       </div>
     </div>

@@ -17,6 +17,10 @@ function FormAddHall() {
     navigate("/adminPage", { replace: true });
   }
 
+    function navigateToForCross() {
+    navigate("/adminPage", { replace: true });
+  }
+
   function handleChange(e) {
     e.preventDefault();
     const { name, value } = e.target;
@@ -82,7 +86,7 @@ function FormAddHall() {
             title={"добавление зала"}
             after={"header-text-after-close"}
             css={"header-text-forAddHallForm"}
-            onClick={navigateTo}
+            onClick={navigateToForCross}
           />
           <form className="wrp-form-addHall" onSubmit={addHall}>
             <div className="wrp-form-addHall-label-input">
@@ -93,15 +97,15 @@ function FormAddHall() {
                 type="text"
                 name="hallName"
                 placeholder="Например, «Зал 1»"
-                className="form-addHall-input"
+                className="form-addHall-input-form"
                 onChange={handleChange}
               />
-            </div>
+            </div> 
             <div className="wrp-form-addHall-btns">
-              <AdminButton title={"добавить зал"} onClick={addHall} />
-              <CencelButton title={"отменить"} onClick={navigateTo} />
+              <AdminButton title={"добавить зал"} onClick={addHall} css={"admin-button-large"}/>
+              <CencelButton title={"отменить"} onClick={navigateTo} widthPX={275}/>
             </div>
-          </form>
+          </form> 
         </div>
       </div>
     </div>
