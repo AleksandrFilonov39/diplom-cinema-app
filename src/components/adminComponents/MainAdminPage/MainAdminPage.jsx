@@ -71,6 +71,7 @@ function MainAdminPage() {
           <AdminButton
             title={"выйти"}
             handleClick={deleteDAtaFromLocalStorage}
+            widthPX={71}
           />
         </div>
 

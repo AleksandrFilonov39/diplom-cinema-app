@@ -182,8 +182,8 @@ function ChangePrice() {
         </label>
       </form>
       <div className="wrp-price-btns">
-        <CencelButton title={"отменить"} onClick={handleCencel} widthPX={146}/>
-        <AdminButton title={"сохранить"} handleClick={handleClick} />
+        <CencelButton title={"отменить"} onClick={handleCencel} widthPX={121}/>
+        <AdminButton title={"сохранить"} handleClick={handleClick} widthPX={146}/>
       </div>
     </div>
   );

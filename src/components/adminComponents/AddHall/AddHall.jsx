@@ -62,7 +62,7 @@ function AddHall() {
         </div>
       ))}
       <div className="wrp-add-hall-btn">
-        <AdminButton title={"Создать зал"} handleClick={navigateTo} />
+        <AdminButton title={"Создать зал"} handleClick={navigateTo} widthPX={160}/>
       </div>
     </div>
   );

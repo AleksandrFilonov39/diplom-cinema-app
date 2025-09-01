@@ -158,6 +158,7 @@
   margin-left: 15px;
   margin-right: 15px;
   margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .wrp-title-choose-tap {
@@ -186,6 +187,14 @@
   margin: 0 auto;
 }
 
+.seats-choose-varaibles-standart.choose {
+  margin-left: 27px;
+}
+
+.seats-choose-varaibles-standart.taken {
+  margin-left: 3px;
+}
+
 .wrp-hall-choose-seats-img {
   width: 284px;
 }
@@ -195,7 +204,7 @@
   display: flex;
   flex-wrap: wrap;
   padding: 30px 33px 0px 33px;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   width: 330px;
 }
 
@@ -229,9 +238,5 @@
 @media (min-width: 990px) {
   .wrp-title-choose-tap {
     display: none;
-  }
-
-  .container-choose-seats {
-    /* padding: 14px 0px 186px 0px; */
   }
 }

@@ -87,6 +87,7 @@ function OpenSales() {
           }
           handleClick={handleClick}
           css={"admin-button-large"}
+          widthPX={280}
         />
       </div>
     </div>

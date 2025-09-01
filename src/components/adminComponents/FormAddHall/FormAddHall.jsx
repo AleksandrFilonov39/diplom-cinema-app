@@ -102,8 +102,8 @@ function FormAddHall() {
               />
             </div> 
             <div className="wrp-form-addHall-btns">
-              <AdminButton title={"добавить зал"} onClick={addHall} css={"admin-button-large"}/>
-              <CencelButton title={"отменить"} onClick={navigateTo} widthPX={275}/>
+              <AdminButton title={"добавить зал"} onClick={addHall} css={"admin-button-large"} widthPX={196}/>
+              <CencelButton title={"отменить"} onClick={navigateTo} widthPX={139}/>
             </div>
           </form> 
         </div>

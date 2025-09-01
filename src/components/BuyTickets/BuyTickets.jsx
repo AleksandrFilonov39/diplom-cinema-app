@@ -79,6 +79,7 @@ function BuyTickets() {
             css={"admin-button-large"}
             title={"Получить код бронирования"}
             handleClick={handleClick}
+            widthPX={337}
           />
         </div>
         <div>

@@ -170,8 +170,9 @@ function AddSeance() {
               title={"добавить фильм"}
               handleClick={(e) => handleClick(e)}
               css={"admin-button-large"}
+              widthPX={196}
             />
-            <CencelButton title={"отменить"} onClick={navigateTo} widthPX={275}/>
+            <CencelButton title={"отменить"} onClick={navigateTo} widthPX={139}/>
           </div>
         </form>
       </div>

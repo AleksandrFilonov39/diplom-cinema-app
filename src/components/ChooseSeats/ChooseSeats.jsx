@@ -149,7 +149,7 @@ function ChooseSeats() {
                 Свободно ({hallName.hall_price_standart}руб.)
               </p>
             </div>
-            <div className="seats-choose-varaibles-standart">
+            <div className="seats-choose-varaibles-standart choose">
               <span className="seats-choose-taken"></span>
               <p className="seats-choose-name">Занято</p>
             </div> 
@@ -159,14 +159,14 @@ function ChooseSeats() {
                 Свободно VIP ({hallName.hall_price_vip}руб.)
               </p>
             </div>
-            <div className="seats-choose-varaibles-standart">
+            <div className="seats-choose-varaibles-standart taken">
               <span className="seats-choose-select"></span>
               <p className="seats-choose-name">Выбрано</p>
             </div>
           </div>
         </div>
         <div className="seats-choose-btn">
-          <AdminButton title={"забронировать"} handleClick={handleClick} css={"admin-button-large"}/>
+          <AdminButton title={"забронировать"} handleClick={handleClick} css={"admin-button-large"} widthPX={232}/>
         </div>
       </div>
     </div>

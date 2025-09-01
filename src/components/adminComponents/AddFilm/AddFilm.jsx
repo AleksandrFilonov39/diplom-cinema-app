@@ -109,6 +109,7 @@ function AddFilm() {
             id="filmName"
             onChange={filmData}
             className="form-addHall-input-form"
+            placeholder="Например, 'Мстители: Финал'"
           />
 
           <label htmlFor="duration" className="form-addHall-title">
@@ -146,14 +147,14 @@ function AddFilm() {
           />
           </div>
           <div className="wrp-addFilm-btns">
-            <AdminButton title={"добавить фильм"} handleClick={handleClick} /> 
+            <AdminButton title={"добавить фильм"} handleClick={handleClick} widthPX={196}/> 
  
             <label className="custom-file-upload">
               <span>Загрузить постер</span>
               <input type="file" name="poster" onChange={filePoster} />
             </label>
 
-            <CencelButton title={"отменить"} onClick={navigateTo} widthPX={146}/>
+            <CencelButton title={"отменить"} onClick={navigateTo} widthPX={196}/>
           </div>
         </form>
       </div>
