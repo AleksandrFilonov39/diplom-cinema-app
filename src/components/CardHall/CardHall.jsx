@@ -40,7 +40,7 @@ function CardHall({ filmSeance, halls }) {
                         : "#"
                     }
                     className={`film-time ${!currentSeances ? "disabled" : ""}`}
-                    key={el.id}
+                    key={el.id} 
                   >
                     <div className="film-wrp-time">
                       <h2 className="film-time">{timeSeance}</h2>

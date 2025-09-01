@@ -72,7 +72,7 @@ function Calendar() {
       updateSelectedDate(newDate);
     }
   };
-
+ 
   if (!date) {
     return <h1>Loading...</h1>;
   }
@@ -93,8 +93,8 @@ function Calendar() {
               onClick={(e) => chengeActive(e, index, day[0], day[2])}
             >
               {isToday
-                ? `Сегодня ${day[0]}, ${day[1]}`
-                : `${day[0]},\n${day[1]}`}
+                ? `Сегодня ${day[1]},\n${day[0]}`
+                : `${day[1]},\n${day[0]}`}
             </a>
           </div>
         );

@@ -1,50 +1,57 @@
 .calendaer__link {
-    border-radius: 2px;
-    background-color: #FFFFFFE5;
-    opacity: 0.9;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: 10px;
-    height: 48px;
-    white-space: pre-line;
-    font-family: Roboto;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0%;
-    vertical-align: middle;
-    align-items: center; 
-    justify-content: center;
+  border-radius: 2px;
+  min-width: 50px;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  max-height: 48px;
+  min-height: 48px;
+  white-space: pre-line;
+  font-family: Roboto;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2px;
+  margin-top: 2px;
+  box-sizing: border-box;
+  flex-grow: 1;
 }
 
 .calendaer__link.weecand {
-    color: red;
+  color: red;
 }
 
 .calendaer__link.active {
-    background: #FFFFFF;
-    box-shadow: 0px 0px 2px 0px #0000001F;
-    box-shadow: 0px 2px 2px 0px #0000003D;
-    font-family: Roboto;
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 15px;
-    line-height: 14px;
-    letter-spacing: 0%;
-    vertical-align: middle;
-    color: #000000;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 2px 0px #0000001f;
+  box-shadow: 0px 2px 2px 0px #0000003d;
+  font-family: Roboto;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 15px;
+  line-height: 14px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #000000;
+  min-height: 52px;
+  margin-top: 0;
+  flex-grow: 2;
 }
 
 .wrp-carusel {
-    margin: 0 auto;
-    margin-top: 15px;
-    width: 100%;
-    max-width: 990px;
+  margin: 0 auto;
+  margin-top: 15px;
+  width: 100%;
+  max-width: 990px;
 }
 
-
-
-
-
+.calendaer__list {
+  display: flex !important;
+}

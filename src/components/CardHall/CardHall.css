@@ -1,41 +1,41 @@
 .film-hall {
-    font-family: Roboto;
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 16px;
-    line-height: 18px;
-    letter-spacing: 0%;
-    vertical-align: middle;
+  font-family: Roboto;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0%;
+  vertical-align: middle;
 }
 
 .film-wrp-allTime {
-    display: flex;
-    gap: 4px;
-    margin-top: 10px;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 4px;
+  margin-top: 10px;
+  flex-wrap: wrap;
 }
 
 .film-wrp-time {
-    width: 53px;
-    height: 33px;
-    background: rgba(255, 255, 255, 1);
-    border-radius: 2px;
-    padding: 8px 7px 7px 8px;
-    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.12);
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.24);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  max-width: 53px;
+  max-height: 33px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 2px;
+  padding: 8px 7px 7px 8px;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.24);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .film-time {
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 17px;
-    letter-spacing: 0%;
-    vertical-align: middle;
-    color: black;
-    text-decoration: none;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: black;
+  text-decoration: none;
 }
 
 .disabled {
